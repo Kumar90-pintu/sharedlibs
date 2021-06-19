@@ -1,3 +1,3 @@
 def call(ecr_repo, version){
-  sh "docker build . -t ${ecr_repo}:${version} -f Dockerfile"
+  sh "docker build . -t test:${version} -f $ecr_repo/Dockerfile"
 }
