@@ -1,4 +1,4 @@
-def call(value, proj) {
+def call(proj) {
         try {
             stage("buildImage") {
                 //checkout scm
@@ -6,7 +6,7 @@ def call(value, proj) {
                sh " cd $proj "
                 echo 'building image'
                //def url = "https://github.com/Kumar90-pintu"
-               sh " docker build -t $value Dockerfile "
+               sh " docker build -t test Dockerfile "
         }
        }
         catch (Exception e) {
