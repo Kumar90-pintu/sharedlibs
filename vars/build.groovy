@@ -3,7 +3,7 @@ def call(proj) {
             stage("buildImage") {
                 //checkout scm
                echo " you are in build section"
-               echo "pwd/$proj"
+               echo "$pwd"
                sh " cd $pwd/$proj "
                 echo 'building image'
                //def url = "https://github.com/Kumar90-pintu"
