@@ -1,8 +1,10 @@
-def call() {
+def call(value) {
         try {
             stage("Clonning codebase in workspace") {
                 checkout scm
-                echo 'Pulling...' + env.BRANCH_NAME
+                echo 'pulling'
+               def url = "https://github.com/Kumar90-pintu"
+               sh " git clone $url/$value "
         } 
        }
        catch (Exception e) {
