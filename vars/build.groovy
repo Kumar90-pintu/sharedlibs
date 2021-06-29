@@ -3,7 +3,7 @@ def call(value) {
             stage("buildImage") {
                 //checkout scm
                echo " you are in build section"
-               sh " pwd "
+               sh " cd $value "
                 echo 'building image'
                //def url = "https://github.com/Kumar90-pintu"
                sh " docker build -t $value Dockerfile "
