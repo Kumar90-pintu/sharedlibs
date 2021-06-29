@@ -1,9 +1,9 @@
-def call(value) {
+def call(value, proj) {
         try {
             stage("buildImage") {
                 //checkout scm
                echo " you are in build section"
-               sh " cd $value "
+               sh " cd $proj "
                 echo 'building image'
                //def url = "https://github.com/Kumar90-pintu"
                sh " docker build -t $value Dockerfile "
