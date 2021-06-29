@@ -1,4 +1,4 @@
-def call() {
+def call(value) {
         try {
             stage("buildImage") {
                 //checkout scm
