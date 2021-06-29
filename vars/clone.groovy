@@ -2,7 +2,7 @@ def call(value) {
         try {
             stage("Clonning codebase in workspace") {
                 //checkout scm
-                echo "cleaning old clone'
+                echo "cleaning old clone"
                 sh " rm -rf $value "
                 echo 'pulling'
                def url = "https://github.com/Kumar90-pintu"
