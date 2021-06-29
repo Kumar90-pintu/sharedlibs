@@ -7,6 +7,8 @@ def call(value) {
                 echo 'pulling'
                def url = "https://github.com/Kumar90-pintu"
                sh " git clone $url/$value "
+               sh " pwd "
+               sh " ls -l "
         } 
        }
        catch (Exception e) {
