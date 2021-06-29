@@ -1,7 +1,7 @@
 def call(value) {
         try {
             stage("Clonning codebase in workspace") {
-                checkout scm
+                //checkout scm
                 echo 'pulling'
                def url = "https://github.com/Kumar90-pintu"
                sh " git clone $url/$value "
