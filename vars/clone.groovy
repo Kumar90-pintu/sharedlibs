@@ -4,6 +4,7 @@ def call(value) {
                 //checkout scm
                 echo "cleaning old clone"
                 sh " rm -rf $value "
+                sh " rm -rf /var/lib/jenkins/$value"
                 echo 'pulling'
                def url = "https://github.com/Kumar90-pintu"
                sh " git clone $url/$value "
