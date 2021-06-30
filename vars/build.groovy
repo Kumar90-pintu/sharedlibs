@@ -9,7 +9,7 @@ def call(proj) {
                sh " cd $proj"
                sh " ls -l"
                //def url = "https://github.com/Kumar90-pintu"
-               sh " docker build -t test /var/lib/jenkins/workspace/project-Testing/$proj/Dockerfile "
+               sh " docker build -t test /var/lib/jenkins/workspace/project-Testing/$proj/."
 
         }
        }
