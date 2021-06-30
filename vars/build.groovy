@@ -4,7 +4,7 @@ def call(proj) {
                 //checkout scm
                echo " you are in build section"
                echo 'building image'
-               path = sh "pwd"
+               path = $(sh "pwd")
                sh "ls -l"
                sh " cd $proj"
                sh " ls -l"
