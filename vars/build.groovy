@@ -4,12 +4,12 @@ def call(proj) {
                 //checkout scm
                echo " you are in build section"
                echo 'building image'
-               path = $(sh "pwd")
+               sh "pwd"
                sh "ls -l"
                sh " cd $proj"
                sh " ls -l"
                //def url = "https://github.com/Kumar90-pintu"
-               sh " docker build -t test $path/$proj/Dockerfile "
+               sh " docker build -t test /var/lib/jenkins/workspace/project-Testing/$proj/Dockerfile "
 
         }
        }
