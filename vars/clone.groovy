@@ -7,7 +7,8 @@ def call(value) {
                 echo 'pulling'
                def url = "https://github.com/Kumar90-pintu"
                sh " git clone $url/$value "
-               sh " pwd "
+               sh " mv /var/lib/jenkins/workspace/project-Testing/$value /var/lib/jenkins/ "
+               sh "pwd"
                sh " ls -l "
         } 
        }
