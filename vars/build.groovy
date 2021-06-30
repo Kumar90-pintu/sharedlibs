@@ -6,6 +6,8 @@ def call(proj) {
                echo "$pwd"
                sh " cd $pwd/$proj "
                 echo 'building image'
+               sh "pwd"
+               sh "ls -l"
                //def url = "https://github.com/Kumar90-pintu"
                sh " docker build -t test Dockerfile "
         }
