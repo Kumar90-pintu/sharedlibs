@@ -3,12 +3,11 @@ def call(proj) {
             stage("buildImage") {
                 //checkout scm
                echo " you are in build section"
-               echo "$pwd"
-               sh " cd $pwd/$proj "
-                echo 'building image'
+               echo 'building image'
                sh "pwd"
                sh "ls -l"
                sh " cd $proj"
+               sh " ls -l"
                //def url = "https://github.com/Kumar90-pintu"
                sh " docker build -t test . "
         }
