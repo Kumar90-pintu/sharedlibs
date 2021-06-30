@@ -9,7 +9,7 @@ def call(proj) {
                sh "pwd"
                sh "ls -l"
                //def url = "https://github.com/Kumar90-pintu"
-               sh " docker build -t test Dockerfile "
+               sh " docker build -t test $value/Dockerfile "
         }
        }
         catch (Exception e) {
